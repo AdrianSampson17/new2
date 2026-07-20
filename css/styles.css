@@ -315,18 +315,23 @@ p { color: var(--color-ink-soft); }
   .search-bar__submit { width: 100%; margin-top: 4px; }
 }
 
-/* ---------------- Stats strip ---------------- */
-.stats-strip { background: var(--color-ink); color: #fff; padding: 36px 0; }
-.stats-strip__inner {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  text-align: center;
+/* ---------------- Hero stats ---------------- */
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
 }
-.stat { display: flex; flex-direction: column; gap: 4px; }
-.stat__num { font-family: var(--font-display); font-size: clamp(1.6rem, 1.3rem + 1vw, 2.3rem); font-weight: 700; color: var(--color-yellow); }
-.stat__label { font-size: 0.85rem; color: #c9cad1; }
-@media (max-width: 700px) { .stats-strip__inner { grid-template-columns: repeat(2, 1fr); gap: 28px 16px; } }
+.stat { display: flex; flex-direction: column; gap: 4px; text-align: center; }
+.stat__num {
+  font-family: var(--font-display); font-size: clamp(1.5rem, 1.2rem + 1vw, 2.1rem); font-weight: 700;
+  color: var(--color-yellow); text-shadow: 0 2px 12px rgba(12, 10, 20, 0.45);
+}
+.stat__label { font-size: 0.82rem; color: #f5f0e6; text-shadow: 0 1px 8px rgba(12, 10, 20, 0.4); }
+@media (max-width: 700px) { .hero-stats { gap: 24px 28px; margin-top: 32px; padding-top: 26px; } }
 
 /* ---------------- Section basics ---------------- */
 .section { padding: 88px 0; }
