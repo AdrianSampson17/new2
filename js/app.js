@@ -15,17 +15,17 @@
     "linear-gradient(135deg,#100e1a,#3a3448)",
   ];
 
-  const CITY_IMG = (slug) => `assets/destinations/${slug}.jpg`;
+  const UNSPLASH = (id) => `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=800&q=70`;
 
   const DESTINATIONS = [
-    { city: "Rome", country: "Italy", count: 412, emoji: "🏛️", img: CITY_IMG("rome") },
-    { city: "Paris", country: "France", count: 389, emoji: "🥐", img: CITY_IMG("paris") },
-    { city: "Bali", country: "Indonesia", count: 276, emoji: "🌴", img: CITY_IMG("bali") },
-    { city: "Tokyo", country: "Japan", count: 331, emoji: "🍜", img: CITY_IMG("tokyo") },
-    { city: "Santorini", country: "Greece", count: 158, emoji: "🌅", img: CITY_IMG("santorini") },
-    { city: "New York", country: "USA", count: 447, emoji: "🗽", img: CITY_IMG("new-york") },
-    { city: "Barcelona", country: "Spain", count: 264, emoji: "⛲", img: CITY_IMG("barcelona") },
-    { city: "Cape Town", country: "South Africa", count: 132, emoji: "🐘", img: CITY_IMG("cape-town") },
+    { city: "Rome", country: "Italy", count: 412, emoji: "🏛️", img: UNSPLASH("1552832230-c0f7dd75323f") },
+    { city: "Paris", country: "France", count: 389, emoji: "🥐", img: UNSPLASH("1502602898657-3e91760cbb34") },
+    { city: "Bali", country: "Indonesia", count: 276, emoji: "🌴", img: UNSPLASH("1518548419970-58e3b4079ab2") },
+    { city: "Tokyo", country: "Japan", count: 331, emoji: "🍜", img: UNSPLASH("1533105079780-92b9be482077") },
+    { city: "Santorini", country: "Greece", count: 158, emoji: "🌅", img: UNSPLASH("1469796466635-455ede028aca") },
+    { city: "New York", country: "USA", count: 447, emoji: "🗽", img: UNSPLASH("1496442226666-8d4d0e62e6e9") },
+    { city: "Barcelona", country: "Spain", count: 264, emoji: "⛲", img: UNSPLASH("1583422409516-2895a77efded") },
+    { city: "Cape Town", country: "South Africa", count: 132, emoji: "🐘", img: UNSPLASH("1516026672322-bc52d61a55d5") },
   ];
 
   const CATEGORIES = [
@@ -40,14 +40,14 @@
   ];
 
   const TOURS = [
-    { title: "Colosseum & Roman Forum Skip-the-Line Tour", city: "Rome, Italy", cat: "walking", emoji: "🏛️", rating: 4.9, reviews: 12480, duration: "3 hrs", price: 59, badge: "Bestseller", img: CITY_IMG("rome") },
-    { title: "Seine River Sunset Cruise with Wine", cat: "water", city: "Paris, France", emoji: "🥂", rating: 4.8, reviews: 6210, duration: "1.5 hrs", price: 42, badge: "Free cancellation", img: CITY_IMG("paris") },
-    { title: "Ubud Rice Terraces & Waterfall Day Trip", cat: "daytrip", city: "Bali, Indonesia", emoji: "🌾", rating: 4.9, reviews: 3789, duration: "8 hrs", price: 68, badge: "Likely to sell out", img: CITY_IMG("bali") },
-    { title: "Tsukiji Street Food Walking Tour", cat: "food", city: "Tokyo, Japan", emoji: "🍢", rating: 4.9, reviews: 5122, duration: "3 hrs", price: 74, badge: "Bestseller", img: CITY_IMG("tokyo") },
-    { title: "Caldera Sailing Trip with BBQ & Drinks", cat: "water", city: "Santorini, Greece", emoji: "⛵", rating: 4.9, reviews: 4390, duration: "5 hrs", price: 95, badge: "Free cancellation", img: CITY_IMG("santorini") },
-    { title: "Sunrise Hike to Table Mountain", cat: "adventure", city: "Cape Town, South Africa", emoji: "🥾", rating: 4.8, reviews: 1876, duration: "4 hrs", price: 39, badge: "", img: CITY_IMG("cape-town") },
-    { title: "MoMA & Modern Art Highlights Tour", cat: "culture", city: "New York, USA", emoji: "🖼️", rating: 4.7, reviews: 2984, duration: "2 hrs", price: 48, badge: "", img: CITY_IMG("new-york") },
-    { title: "Gothic Quarter Tapas & Flamenco Night", cat: "night", city: "Barcelona, Spain", emoji: "💃", rating: 4.9, reviews: 3312, duration: "3.5 hrs", price: 66, badge: "Bestseller", img: CITY_IMG("barcelona") },
+    { title: "Colosseum & Roman Forum Skip-the-Line Tour", city: "Rome, Italy", cat: "walking", emoji: "🏛️", rating: 4.9, reviews: 12480, duration: "3 hrs", price: 59, badge: "Bestseller", img: UNSPLASH("1552832230-c0f7dd75323f") },
+    { title: "Seine River Sunset Cruise with Wine", cat: "water", city: "Paris, France", emoji: "🥂", rating: 4.8, reviews: 6210, duration: "1.5 hrs", price: 42, badge: "Free cancellation", img: UNSPLASH("1502602898657-3e91760cbb34") },
+    { title: "Ubud Rice Terraces & Waterfall Day Trip", cat: "daytrip", city: "Bali, Indonesia", emoji: "🌾", rating: 4.9, reviews: 3789, duration: "8 hrs", price: 68, badge: "Likely to sell out", img: UNSPLASH("1518548419970-58e3b4079ab2") },
+    { title: "Tsukiji Street Food Walking Tour", cat: "food", city: "Tokyo, Japan", emoji: "🍢", rating: 4.9, reviews: 5122, duration: "3 hrs", price: 74, badge: "Bestseller", img: UNSPLASH("1526481280693-3bfa7568e0f3") },
+    { title: "Caldera Sailing Trip with BBQ & Drinks", cat: "water", city: "Santorini, Greece", emoji: "⛵", rating: 4.9, reviews: 4390, duration: "5 hrs", price: 95, badge: "Free cancellation", img: UNSPLASH("1469796466635-455ede028aca") },
+    { title: "Sunrise Hike to Table Mountain", cat: "adventure", city: "Cape Town, South Africa", emoji: "🥾", rating: 4.8, reviews: 1876, duration: "4 hrs", price: 39, badge: "", img: UNSPLASH("1500530855697-b586d89ba3ee") },
+    { title: "MoMA & Modern Art Highlights Tour", cat: "culture", city: "New York, USA", emoji: "🖼️", rating: 4.7, reviews: 2984, duration: "2 hrs", price: 48, badge: "", img: UNSPLASH("1496442226666-8d4d0e62e6e9") },
+    { title: "Gothic Quarter Tapas & Flamenco Night", cat: "night", city: "Barcelona, Spain", emoji: "💃", rating: 4.9, reviews: 3312, duration: "3.5 hrs", price: 66, badge: "Bestseller", img: UNSPLASH("1583422409516-2895a77efded") },
   ];
 
   const TESTIMONIALS = [
