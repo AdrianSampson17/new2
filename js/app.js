@@ -5,14 +5,14 @@
      Data
      ============================================================ */
   const GRADIENTS = [
-    "linear-gradient(135deg,#ff9a6c,#ff5a36)",
-    "linear-gradient(135deg,#33c9a7,#0f6e5c)",
-    "linear-gradient(135deg,#7fb2ff,#3457d5)",
-    "linear-gradient(135deg,#ffd166,#ff8a3d)",
-    "linear-gradient(135deg,#c792ea,#7b4ea3)",
-    "linear-gradient(135deg,#6fd3c7,#1f8a7a)",
-    "linear-gradient(135deg,#ff8fa3,#e2437a)",
-    "linear-gradient(135deg,#8ec5ff,#4f6cd9)",
+    "linear-gradient(135deg,#ffd95e,#ff9f1c)",
+    "linear-gradient(135deg,#9a6cf0,#4c2a9e)",
+    "linear-gradient(135deg,#2b2438,#6d3fcf)",
+    "linear-gradient(135deg,#ffe27a,#2a1b57)",
+    "linear-gradient(135deg,#c8a8ff,#5b21b6)",
+    "linear-gradient(135deg,#3d3450,#8c3fae)",
+    "linear-gradient(135deg,#ffdb70,#c98a00)",
+    "linear-gradient(135deg,#7c5cf0,#1a1425)",
   ];
 
   const DESTINATIONS = [
@@ -49,10 +49,10 @@
   ];
 
   const TESTIMONIALS = [
-    { quote: "Our guide in Rome knew every back alley worth seeing. Booking took two minutes and the tour itself was the highlight of our trip.", name: "Maren K.", place: "Traveled to Rome, Italy", initials: "MK", rating: 5, color: "#ff5a36" },
-    { quote: "I was nervous about a solo trip to Tokyo, but the food tour host made me feel like a local within an hour. Worth every yen.", name: "Devon R.", place: "Traveled to Tokyo, Japan", initials: "DR", rating: 5, color: "#0f6e5c" },
-    { quote: "Free cancellation saved us when our flight got delayed — rebooked the Santorini cruise for the next day with zero hassle.", name: "Priya S.", place: "Traveled to Santorini, Greece", initials: "PS", rating: 5, color: "#3457d5" },
-    { quote: "Best price guarantee is real. Found the same tour cheaper elsewhere and support matched it within the hour.", name: "Tomás L.", place: "Traveled to Barcelona, Spain", initials: "TL", rating: 4, color: "#7b4ea3" },
+    { quote: "Our guide in Rome knew every back alley worth seeing. Booking took two minutes and the tour itself was the highlight of our trip.", name: "Maren K.", place: "Traveled to Rome, Italy", initials: "MK", rating: 5, color: "#6d3fcf" },
+    { quote: "I was nervous about a solo trip to Tokyo, but the food tour host made me feel like a local within an hour. Worth every yen.", name: "Devon R.", place: "Traveled to Tokyo, Japan", initials: "DR", rating: 5, color: "#14121f" },
+    { quote: "Free cancellation saved us when our flight got delayed — rebooked the Santorini cruise for the next day with zero hassle.", name: "Priya S.", place: "Traveled to Santorini, Greece", initials: "PS", rating: 5, color: "#2a1b57" },
+    { quote: "Best price guarantee is real. Found the same tour cheaper elsewhere and support matched it within the hour.", name: "Tomás L.", place: "Traveled to Barcelona, Spain", initials: "TL", rating: 4, color: "#8c3fae" },
   ];
 
   /* ============================================================
@@ -108,7 +108,7 @@
       <article class="tour-card" data-cat="${t.cat}">
         <div class="tour-card__media" style="--tile-bg:${GRADIENTS[i % GRADIENTS.length]}">
           <span aria-hidden="true">${t.emoji}</span>
-          ${t.badge ? `<span class="tour-card__badge${t.badge === "Bestseller" ? " tour-card__badge--coral" : ""}">${t.badge}</span>` : ""}
+          ${t.badge ? `<span class="tour-card__badge${t.badge === "Bestseller" ? " tour-card__badge--accent" : ""}">${t.badge}</span>` : ""}
           <button type="button" class="tour-card__wishlist" aria-pressed="false" aria-label="Save ${t.title} to wishlist">
             <svg width="17" height="17"><use href="#icon-heart"/></svg>
           </button>
