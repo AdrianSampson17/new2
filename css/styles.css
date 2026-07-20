@@ -553,13 +553,20 @@ p { color: var(--color-ink-soft); }
 
 /* ---------------- Become a guide ---------------- */
 .become-guide {
-  background: linear-gradient(135deg, #0c0a15, var(--color-ink) 70%);
+  background-image: url("../assets/become-guide-photo.jpg");
+  background-size: cover;
+  background-position: center;
   color: #fff;
   padding: 96px 0;
   position: relative;
   overflow: hidden;
 }
-.become-guide__inner { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 48px; align-items: center; }
+.become-guide::before {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(12, 10, 21, 0.82), rgba(20, 18, 31, 0.72) 70%);
+}
+.become-guide__inner { position: relative; z-index: 1; display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 48px; align-items: center; }
 .become-guide__art { position: relative; min-height: 320px; display: flex; align-items: center; justify-content: center; }
 .become-guide__blob {
   position: absolute; width: 260px; height: 260px; border-radius: 50%;
