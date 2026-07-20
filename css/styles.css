@@ -457,19 +457,17 @@ p { color: var(--color-ink-soft); }
 @media (max-width: 560px) { .tour-grid { grid-template-columns: 1fr; } }
 
 /* ---------------- How it works ---------------- */
-.how-it-works { padding: 96px 0; background: var(--color-ink); color: #fff; }
-.how-it-works .eyebrow { color: #ffe27a; }
-.how-it-works h2 { color: #fff; }
+.how-it-works { padding: 96px 0; background: var(--color-cream-deep); }
 .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 12px; }
 .step {
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.12);
+  background: #fff;
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: 32px 28px;
+  box-shadow: var(--shadow-sm);
 }
-.step__num { font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--color-yellow); }
-.step h3 { color: #fff; margin: 10px 0 8px; }
-.step p { color: #c7c2da; }
+.step__num { font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--color-amber); }
+.step h3 { margin: 10px 0 8px; }
 
 @media (max-width: 860px) { .steps { grid-template-columns: 1fr; } }
 
