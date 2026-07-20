@@ -6,13 +6,13 @@
      ============================================================ */
   const GRADIENTS = [
     "linear-gradient(135deg,#ffd95e,#ff9f1c)",
-    "linear-gradient(135deg,#9a6cf0,#4c2a9e)",
-    "linear-gradient(135deg,#2b2438,#6d3fcf)",
-    "linear-gradient(135deg,#ffe27a,#2a1b57)",
-    "linear-gradient(135deg,#c8a8ff,#5b21b6)",
-    "linear-gradient(135deg,#3d3450,#8c3fae)",
-    "linear-gradient(135deg,#ffdb70,#c98a00)",
-    "linear-gradient(135deg,#7c5cf0,#1a1425)",
+    "linear-gradient(135deg,#3a3448,#14121f)",
+    "linear-gradient(135deg,#ffe27a,#c98a00)",
+    "linear-gradient(135deg,#252131,#525064)",
+    "linear-gradient(135deg,#ffc530,#7a4f00)",
+    "linear-gradient(135deg,#4a4558,#1a1825)",
+    "linear-gradient(135deg,#ffdb70,#a66a00)",
+    "linear-gradient(135deg,#100e1a,#3a3448)",
   ];
 
   const DESTINATIONS = [
@@ -49,10 +49,10 @@
   ];
 
   const TESTIMONIALS = [
-    { quote: "Our guide in Rome knew every back alley worth seeing. Booking took two minutes and the tour itself was the highlight of our trip.", name: "Maren K.", place: "Traveled to Rome, Italy", initials: "MK", rating: 5, color: "#6d3fcf" },
-    { quote: "I was nervous about a solo trip to Tokyo, but the food tour host made me feel like a local within an hour. Worth every yen.", name: "Devon R.", place: "Traveled to Tokyo, Japan", initials: "DR", rating: 5, color: "#14121f" },
-    { quote: "Free cancellation saved us when our flight got delayed — rebooked the Santorini cruise for the next day with zero hassle.", name: "Priya S.", place: "Traveled to Santorini, Greece", initials: "PS", rating: 5, color: "#2a1b57" },
-    { quote: "Best price guarantee is real. Found the same tour cheaper elsewhere and support matched it within the hour.", name: "Tomás L.", place: "Traveled to Barcelona, Spain", initials: "TL", rating: 4, color: "#8c3fae" },
+    { quote: "Our guide in Rome knew every back alley worth seeing. Booking took two minutes and the tour itself was the highlight of our trip.", name: "Maren K.", place: "Traveled to Rome, Italy", initials: "MK", rating: 5, color: "#14121f" },
+    { quote: "I was nervous about a solo trip to Tokyo, but the food tour host made me feel like a local within an hour. Worth every yen.", name: "Devon R.", place: "Traveled to Tokyo, Japan", initials: "DR", rating: 5, color: "#a66a00" },
+    { quote: "Free cancellation saved us when our flight got delayed — rebooked the Santorini cruise for the next day with zero hassle.", name: "Priya S.", place: "Traveled to Santorini, Greece", initials: "PS", rating: 5, color: "#3a3448" },
+    { quote: "Best price guarantee is real. Found the same tour cheaper elsewhere and support matched it within the hour.", name: "Tomás L.", place: "Traveled to Barcelona, Spain", initials: "TL", rating: 4, color: "#7a4f00" },
   ];
 
   /* ============================================================
