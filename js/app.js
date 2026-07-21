@@ -20,6 +20,17 @@
     "assets/cards/sample-2.jpg",
     "assets/cards/sample-3.jpg",
     "assets/cards/sample-4.jpg",
+    "assets/cards/sample-5.jpg",
+    "assets/cards/sample-6.jpg",
+    "assets/cards/sample-7.jpg",
+    "assets/cards/sample-8.jpg",
+    "assets/cards/sample-9.jpg",
+    "assets/cards/sample-10.jpg",
+    "assets/cards/sample-11.jpg",
+    "assets/cards/sample-12.jpg",
+    "assets/cards/sample-13.jpg",
+    "assets/cards/sample-14.jpg",
+    "assets/cards/sample-15.jpg",
   ];
 
   const DESTINATIONS = [
@@ -79,7 +90,7 @@
     if (!grid) return;
     grid.innerHTML = DESTINATIONS.map((d, i) => `
       <a class="destination-card" href="#featured-tours" style="--tile-bg:${GRADIENTS[i % GRADIENTS.length]}">
-        <img class="destination-card__photo" src="${SAMPLE_PHOTOS[i % SAMPLE_PHOTOS.length]}" alt="" loading="lazy" onerror="this.remove()">
+        <img class="destination-card__photo" src="${SAMPLE_PHOTOS[i]}" alt="" loading="lazy" onerror="this.remove()">
         <span class="destination-card__emoji">${d.emoji}</span>
         <span class="destination-card__city">${d.city}</span>
         <span class="destination-card__count">${d.count} tours &middot; ${d.country}</span>
@@ -115,7 +126,7 @@
     grid.innerHTML = TOURS.map((t, i) => `
       <article class="tour-card" data-cat="${t.cat}">
         <div class="tour-card__media" style="--tile-bg:${GRADIENTS[i % GRADIENTS.length]}">
-          <img class="tour-card__photo" src="${SAMPLE_PHOTOS[(i + 2) % SAMPLE_PHOTOS.length]}" alt="" loading="lazy" onerror="this.remove()">
+          <img class="tour-card__photo" src="${SAMPLE_PHOTOS[SAMPLE_PHOTOS.length - 8 + i]}" alt="" loading="lazy" onerror="this.remove()">
           <span aria-hidden="true">${t.emoji}</span>
           ${t.badge ? `<span class="tour-card__badge${t.badge === "Bestseller" ? " tour-card__badge--accent" : ""}">${t.badge}</span>` : ""}
           <button type="button" class="tour-card__wishlist" aria-pressed="false" aria-label="Save ${t.title} to wishlist">
