@@ -56,11 +56,11 @@
   ];
 
   const TOURS = [
-    { title: "Colosseum & Roman Forum Skip-the-Line Tour", city: "Rome, Italy", cat: "walking", emoji: "🏛️", rating: 4.9, reviews: 12480, duration: "3 hrs", price: 59, badge: "Bestseller" },
+    { title: "Colosseum & Roman Forum Skip-the-Line Tour", city: "Rome, Italy", cat: "walking", emoji: "🏛️", rating: 4.9, reviews: 12480, duration: "3 hrs", price: 59, badge: "Bestseller", slug: "colosseum-rome" },
     { title: "Seine River Sunset Cruise with Wine", cat: "water", city: "Paris, France", emoji: "🥂", rating: 4.8, reviews: 6210, duration: "1.5 hrs", price: 42, badge: "Free cancellation" },
-    { title: "Ubud Rice Terraces & Waterfall Day Trip", cat: "daytrip", city: "Bali, Indonesia", emoji: "🌾", rating: 4.9, reviews: 3789, duration: "8 hrs", price: 68, badge: "Likely to sell out" },
+    { title: "Ubud Rice Terraces & Waterfall Day Trip", cat: "daytrip", city: "Bali, Indonesia", emoji: "🌾", rating: 4.9, reviews: 3789, duration: "8 hrs", price: 68, badge: "Likely to sell out", slug: "ubud-rice-terraces" },
     { title: "Tsukiji Street Food Walking Tour", cat: "food", city: "Tokyo, Japan", emoji: "🍢", rating: 4.9, reviews: 5122, duration: "3 hrs", price: 74, badge: "Bestseller" },
-    { title: "Caldera Sailing Trip with BBQ & Drinks", cat: "water", city: "Santorini, Greece", emoji: "⛵", rating: 4.9, reviews: 4390, duration: "5 hrs", price: 95, badge: "Free cancellation" },
+    { title: "Caldera Sailing Trip with BBQ & Drinks", cat: "water", city: "Santorini, Greece", emoji: "⛵", rating: 4.9, reviews: 4390, duration: "5 hrs", price: 95, badge: "Free cancellation", slug: "santorini-sailing" },
     { title: "Sunrise Hike to Table Mountain", cat: "adventure", city: "Cape Town, South Africa", emoji: "🥾", rating: 4.8, reviews: 1876, duration: "4 hrs", price: 39, badge: "" },
     { title: "MoMA & Modern Art Highlights Tour", cat: "culture", city: "New York, USA", emoji: "🖼️", rating: 4.7, reviews: 2984, duration: "2 hrs", price: 48, badge: "" },
     { title: "Gothic Quarter Tapas & Flamenco Night", cat: "night", city: "Barcelona, Spain", emoji: "💃", rating: 4.9, reviews: 3312, duration: "3.5 hrs", price: 66, badge: "Bestseller" },
@@ -126,6 +126,7 @@
     grid.innerHTML = TOURS.map((t, i) => `
       <article class="tour-card" data-cat="${t.cat}">
         <div class="tour-card__media" style="--tile-bg:${GRADIENTS[i % GRADIENTS.length]}">
+          ${t.slug ? `<a class="tour-card__media-link" href="tours/${t.slug}.html" aria-label="View ${t.title}"></a>` : ""}
           <img class="tour-card__photo" src="${SAMPLE_PHOTOS[SAMPLE_PHOTOS.length - 8 + i]}" alt="" loading="lazy" onerror="this.remove()">
           <span aria-hidden="true">${t.emoji}</span>
           ${t.badge ? `<span class="tour-card__badge${t.badge === "Bestseller" ? " tour-card__badge--accent" : ""}">${t.badge}</span>` : ""}
@@ -135,7 +136,7 @@
         </div>
         <div class="tour-card__body">
           <p class="tour-card__location"><svg width="12" height="12"><use href="#icon-pin"/></svg> ${t.city}</p>
-          <h3 class="tour-card__title">${t.title}</h3>
+          <h3 class="tour-card__title">${t.slug ? `<a href="tours/${t.slug}.html">${t.title}</a>` : t.title}</h3>
           <div class="tour-card__meta">
             <span><svg width="14" height="14"><use href="#icon-clock"/></svg>${t.duration}</span>
           </div>
